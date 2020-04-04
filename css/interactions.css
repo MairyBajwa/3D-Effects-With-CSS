@@ -17,5 +17,16 @@
 	perspective: 800px;
 }
 .photo{
-transform: rotateY(45deg);
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+.photo:hover{
+	transform: rotateX(180deg);
+}
+.side-a,
+.side-b{
+	backface-visibility: hidden;
+}
+.side-b{
+	transform: rotateX(-180deg);
 }
