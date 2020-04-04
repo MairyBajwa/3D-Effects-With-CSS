@@ -13,8 +13,9 @@
   Photo 3D Transforms & Transitions
 ==================================== */
 
-.content{
+.photo-container{
 	perspective: 800px;
+	perspective-origin:top;
 }
 .photo{
 	transition: transform 1s;
